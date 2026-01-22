@@ -5,21 +5,21 @@
 class Reorg < Formula
   desc "Personal organization tool for managing areas, projects, and tasks"
   homepage "https://github.com/ihavespoons/reorg"
-  version "0.0.9"
+  version "0.0.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ihavespoons/reorg/releases/download/v0.0.9/reorg_0.0.9_darwin_amd64.tar.gz"
-      sha256 "8918b4afca7bdd82a48837b1f0ad1e0d30f072fa2d2b894721d6701e2299c95a"
+      url "https://github.com/ihavespoons/reorg/releases/download/v0.0.10/reorg_0.0.10_darwin_amd64.tar.gz"
+      sha256 "a475fde9d950fe3ff61367c331d66f9b2d72294c2ab6c6c7b9077ee2ab0b4c6b"
 
       def install
         bin.install "reorg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ihavespoons/reorg/releases/download/v0.0.9/reorg_0.0.9_darwin_arm64.tar.gz"
-      sha256 "6e68f93e4ec1f83fecb07cafd096459ce14af15831788de637f5ed0562e2df29"
+      url "https://github.com/ihavespoons/reorg/releases/download/v0.0.10/reorg_0.0.10_darwin_arm64.tar.gz"
+      sha256 "4a085e7828cc94c2f9be018b1ae805fc4a10951e139ec8a67faf4fc0c6a91598"
 
       def install
         bin.install "reorg"
@@ -29,15 +29,15 @@ class Reorg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ihavespoons/reorg/releases/download/v0.0.9/reorg_0.0.9_linux_amd64.tar.gz"
-      sha256 "16ec3c11e065ba48c06dc2733700741128cea0f5a5760c56ffdf18c594f172f9"
+      url "https://github.com/ihavespoons/reorg/releases/download/v0.0.10/reorg_0.0.10_linux_amd64.tar.gz"
+      sha256 "aba124b14ad51c6b4a38c05f97d864c61400df42e7cf774d2ab1048ab7ab2ecc"
       def install
         bin.install "reorg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ihavespoons/reorg/releases/download/v0.0.9/reorg_0.0.9_linux_arm64.tar.gz"
-      sha256 "a7a26cffeb24ad7c436eb2f138afddbfdc4b68543108fce2b9ba839167ec9a1f"
+      url "https://github.com/ihavespoons/reorg/releases/download/v0.0.10/reorg_0.0.10_linux_arm64.tar.gz"
+      sha256 "26e7f9feb7c930ffce5f9919fa686600b2572ef92ac96a9453545961fb349cde"
       def install
         bin.install "reorg"
       end
