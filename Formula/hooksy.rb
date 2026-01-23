@@ -5,21 +5,21 @@
 class Hooksy < Formula
   desc "Claude Code Security Inspector - A security gateway for Claude Code hooks"
   homepage "https://github.com/ihavespoons/hooksy"
-  version "0.3.0"
+  version "0.5.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ihavespoons/hooksy/releases/download/v0.3.0/hooksy_0.3.0_darwin_amd64.tar.gz"
-      sha256 "58d1d34a36974ad2f9b079c3fc5c22cde8ecaf1d9b5abd00dc1dbba6e0520c93"
+      url "https://github.com/ihavespoons/hooksy/releases/download/v0.5.0/hooksy_0.5.0_darwin_amd64.tar.gz"
+      sha256 "98582b6eec7c7d3098c7e9999617be8274fd05352cd9f6d0acd770a5a3dba157"
 
       def install
         bin.install "hooksy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ihavespoons/hooksy/releases/download/v0.3.0/hooksy_0.3.0_darwin_arm64.tar.gz"
-      sha256 "2d4541653c2adfa96a6e855e1ae3b9a2107d4f5df5576bc0d478b22fa7861ca9"
+      url "https://github.com/ihavespoons/hooksy/releases/download/v0.5.0/hooksy_0.5.0_darwin_arm64.tar.gz"
+      sha256 "9a581e1a4d7a8d52d819dac8fa711283bb1b9f981a3cecc34c0db4b303f15908"
 
       def install
         bin.install "hooksy"
@@ -29,15 +29,15 @@ class Hooksy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ihavespoons/hooksy/releases/download/v0.3.0/hooksy_0.3.0_linux_amd64.tar.gz"
-      sha256 "633aed5aa824d800fcdabaf1b57d4bfae30f34c1d97289e7c32727b4930c24c8"
+      url "https://github.com/ihavespoons/hooksy/releases/download/v0.5.0/hooksy_0.5.0_linux_amd64.tar.gz"
+      sha256 "ea96f8ea7b8c58d655aad054fc391adb38c9a1f17133a784e1ba5fd69caff380"
       def install
         bin.install "hooksy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ihavespoons/hooksy/releases/download/v0.3.0/hooksy_0.3.0_linux_arm64.tar.gz"
-      sha256 "7761fb3f64cd63fba1bca416844a7157a17d4afb063df5dda905c5c57321f18f"
+      url "https://github.com/ihavespoons/hooksy/releases/download/v0.5.0/hooksy_0.5.0_linux_arm64.tar.gz"
+      sha256 "24b80552c1ad1bfc7f7f893cc290f4a7773f38fcd581b7a6ac596a31ba48ec93"
       def install
         bin.install "hooksy"
       end
