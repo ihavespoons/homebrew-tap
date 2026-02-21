@@ -5,21 +5,21 @@
 class Zrok < Formula
   desc "LLM-assisted code review tool with agent orchestration"
   homepage "https://github.com/ihavespoons/zrok"
-  version "0.2.5"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ihavespoons/zrok/releases/download/v0.2.5/zrok_0.2.5_darwin_amd64.tar.gz"
-      sha256 "b4a724867de873a300bc9f5abb8fbbd57c44012f8fcef63e90a1d283cdc101fa"
+      url "https://github.com/ihavespoons/zrok/releases/download/v0.3.0/zrok_0.3.0_darwin_amd64.tar.gz"
+      sha256 "b4dca78e51cf02a72f8c407ae075e579153bb29f107ebaeb246aa739bea0f4fc"
 
       def install
         bin.install "zrok"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ihavespoons/zrok/releases/download/v0.2.5/zrok_0.2.5_darwin_arm64.tar.gz"
-      sha256 "d3034be0bb0d6806e3c6a8cead5467aa6b2731ec12250ca99dd36bfef47c7526"
+      url "https://github.com/ihavespoons/zrok/releases/download/v0.3.0/zrok_0.3.0_darwin_arm64.tar.gz"
+      sha256 "0315d4a682076f1965dc2bcce3a93eb6c1f845d6ad81ad04c24d01a40b6de741"
 
       def install
         bin.install "zrok"
@@ -29,15 +29,15 @@ class Zrok < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ihavespoons/zrok/releases/download/v0.2.5/zrok_0.2.5_linux_amd64.tar.gz"
-      sha256 "4cb1c7dac14aeedb4a01cc846ac557c4807ff31a793cbf15fc4d88ee7280a43d"
+      url "https://github.com/ihavespoons/zrok/releases/download/v0.3.0/zrok_0.3.0_linux_amd64.tar.gz"
+      sha256 "f9a95c8b0adaf5ac1169d1e189b06660320e091bea29e6f1794179433656ca69"
       def install
         bin.install "zrok"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ihavespoons/zrok/releases/download/v0.2.5/zrok_0.2.5_linux_arm64.tar.gz"
-      sha256 "401c8abc79be0bbee8b1b761103ce83f5d5d6f31c880c7004f1d5febbbc0972d"
+      url "https://github.com/ihavespoons/zrok/releases/download/v0.3.0/zrok_0.3.0_linux_arm64.tar.gz"
+      sha256 "d74c1062c268fa6bdb180c9ea30d81b6d646cdd8059ca9a9cd30146fca04d638"
       def install
         bin.install "zrok"
       end
