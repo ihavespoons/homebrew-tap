@@ -5,23 +5,23 @@
 class Zrok < Formula
   desc "LLM-assisted code review tool with agent orchestration"
   homepage "https://github.com/ihavespoons/zrok"
-  version "0.3.0"
+  version "0.6.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ihavespoons/zrok/releases/download/v0.3.0/zrok_0.3.0_darwin_amd64.tar.gz"
-      sha256 "b4dca78e51cf02a72f8c407ae075e579153bb29f107ebaeb246aa739bea0f4fc"
+      url "https://github.com/ihavespoons/zrok/releases/download/v0.6.0/zrok_0.6.0_darwin_amd64.tar.gz"
+      sha256 "de7a885667b9a4b7e266c1c55b178fd3a59081fa4c0307dac0c23e48ff889a3d"
 
-      def install
+      define_method(:install) do
         bin.install "zrok"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ihavespoons/zrok/releases/download/v0.3.0/zrok_0.3.0_darwin_arm64.tar.gz"
-      sha256 "0315d4a682076f1965dc2bcce3a93eb6c1f845d6ad81ad04c24d01a40b6de741"
+      url "https://github.com/ihavespoons/zrok/releases/download/v0.6.0/zrok_0.6.0_darwin_arm64.tar.gz"
+      sha256 "98d7b8dd7cad5302827e2264869bae39f681ee955a3bc2a924e4588c2570a333"
 
-      def install
+      define_method(:install) do
         bin.install "zrok"
       end
     end
@@ -29,16 +29,16 @@ class Zrok < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ihavespoons/zrok/releases/download/v0.3.0/zrok_0.3.0_linux_amd64.tar.gz"
-      sha256 "f9a95c8b0adaf5ac1169d1e189b06660320e091bea29e6f1794179433656ca69"
-      def install
+      url "https://github.com/ihavespoons/zrok/releases/download/v0.6.0/zrok_0.6.0_linux_amd64.tar.gz"
+      sha256 "546e736c22f4384b14dee70337b5fbe2185f518c344b835709c5362ed19679b4"
+      define_method(:install) do
         bin.install "zrok"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ihavespoons/zrok/releases/download/v0.3.0/zrok_0.3.0_linux_arm64.tar.gz"
-      sha256 "d74c1062c268fa6bdb180c9ea30d81b6d646cdd8059ca9a9cd30146fca04d638"
-      def install
+      url "https://github.com/ihavespoons/zrok/releases/download/v0.6.0/zrok_0.6.0_linux_arm64.tar.gz"
+      sha256 "640647dd36b3c58bf53b851450df3fb063bd09f3b1056c6027846200a66711a9"
+      define_method(:install) do
         bin.install "zrok"
       end
     end
