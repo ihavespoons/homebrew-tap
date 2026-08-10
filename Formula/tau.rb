@@ -5,21 +5,21 @@
 class Tau < Formula
   desc "Coding agent for your terminal — a Go reimplementation of Pi"
   homepage "https://github.com/ihavespoons/tau"
-  version "0.17.0"
+  version "0.18.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ihavespoons/tau/releases/download/v0.17.0/tau_0.17.0_darwin_amd64.tar.gz"
-      sha256 "17424ecc374f07b4730e0df13c04dac1be37c4223293db969a81669221102c49"
+      url "https://github.com/ihavespoons/tau/releases/download/v0.18.0/tau_0.18.0_darwin_amd64.tar.gz"
+      sha256 "30876ee3308afc03ad8a3431a658179eecc6407b5c951c1b83984a8ac4f6fc6a"
 
       define_method(:install) do
         bin.install "tau"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ihavespoons/tau/releases/download/v0.17.0/tau_0.17.0_darwin_arm64.tar.gz"
-      sha256 "afa34b359afb04a10eeda3d8888784fa1ac185bc0f21f89934973741af05ccc7"
+      url "https://github.com/ihavespoons/tau/releases/download/v0.18.0/tau_0.18.0_darwin_arm64.tar.gz"
+      sha256 "a5908b1cb57ab5915daf7f4d9cc6b9cf665ffd2b784a1e9110f74d2205cae0d3"
 
       define_method(:install) do
         bin.install "tau"
@@ -29,15 +29,15 @@ class Tau < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ihavespoons/tau/releases/download/v0.17.0/tau_0.17.0_linux_amd64.tar.gz"
-      sha256 "cc8cdf1c2cbe7854a838ee910a2cdc648678fc417b0f388fc0a148179f6fd085"
+      url "https://github.com/ihavespoons/tau/releases/download/v0.18.0/tau_0.18.0_linux_amd64.tar.gz"
+      sha256 "aa2a392da7c11e90973ed71e55f65802746970b2c0788cd64f73a40b99aad968"
       define_method(:install) do
         bin.install "tau"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ihavespoons/tau/releases/download/v0.17.0/tau_0.17.0_linux_arm64.tar.gz"
-      sha256 "e3e4cd54c8843fba475653dc0a61489c2fcf4ecb0dbcc356ed7803e082e1abb9"
+      url "https://github.com/ihavespoons/tau/releases/download/v0.18.0/tau_0.18.0_linux_arm64.tar.gz"
+      sha256 "ad69fd6e516d26c33e8bb08b0a3aca8835cfdf1bf435cd4c852ea516f0a18c6c"
       define_method(:install) do
         bin.install "tau"
       end
